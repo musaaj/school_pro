@@ -4,7 +4,7 @@
 
 
 char *integer_to_binary(int number) {
-  char *binary_string = malloc(32 * sizeof(char));
+  static char binary_string[1042];
   int i = 0;
 
   while (number > 0) {
