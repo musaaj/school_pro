@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 #include "main.h"
 
 int main(int argc, char* args[])
 {
   char *c, **arguments;
-  unsigned int size = 102;
+  unsigned int size = INT_MAX / 2;
 
 
   while(1){
@@ -19,6 +21,7 @@ int main(int argc, char* args[])
     if (!strcmp(arguments[0], "XOR")) _xor(arguments[1], arguments[2]);
     if (!strcmp(arguments[0], "RSHIFT")) _rshift(arguments[1]);
     if (!strcmp(arguments[0], "LSHIFT")) _lshift(arguments[1]);
+    freestrarray(arguments);
   }
   return (0);
 }

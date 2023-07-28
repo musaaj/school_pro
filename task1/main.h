@@ -11,5 +11,5 @@ void _xor(char *, char *);
 void _rshift(char *);
 void _lshift(char *);
 char **strsplit(char *);
-char** split_string_by_space(const char* inputString, int* numTokens);
+void freestrarray(char **str);
 #endif
