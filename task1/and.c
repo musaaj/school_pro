@@ -9,7 +9,6 @@ void _and(char *left, char *right)
   int _left = binary_to_integer(left);
   int num = _left & _right;
 
-  printf("%d %d\n", _left, _right);
   printf("%s AND %s = ", left, right);
   if (num) 
   {

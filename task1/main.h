@@ -10,6 +10,7 @@ void _nor(char *, char *);
 void _xor(char *, char *);
 void _rshift(char *);
 void _lshift(char *);
+void _help(void);
 char **strsplit(char *);
 void freestrarray(char **str);
 #endif

@@ -9,11 +9,18 @@ int main(int argc, char* args[])
   char *c, **arguments;
   unsigned int size = INT_MAX / 2;
 
-
+  _help();
   while(1){
     printf(">> ");
     getline(&c, &size, stdin);
     arguments = strsplit(c);
+    if (!arguments) continue;
+    if (!strcmp(arguments[0], "QUIT"))
+    {
+      freestrarray(arguments);
+      return (0);
+    }
+    if (!strcmp(arguments[0], "HELP")) _help();
     if (!strcmp(arguments[0], "AND")) _and(arguments[1], arguments[2]); 
     if (!strcmp(arguments[0], "NAND")) _nand(arguments[1], arguments[2]);
     if (!strcmp(arguments[0], "OR")) _or(arguments[1], arguments[2]);
