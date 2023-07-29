@@ -2,7 +2,10 @@
 #include <string.h>
 #include "main.h"
 
-
+/**
+ * _lshift - perform logic LEFT SHIFT 1 operation and prints out the result
+ * @left: null terminated string consisting of only 1s and 0s
+ */
 void _lshift(char *left)
 {
   int _left = binary_to_integer(left);

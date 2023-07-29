@@ -2,7 +2,12 @@
 #include <string.h>
 #include "main.h"
 
+/**
+ * _nor - perform logic NOR operation and prints out the result
+ * @left: null terminated string consisting of only 1s and 0s
+ * @right: null terminated string consisting of 1s and 0s
 
+ */
 void _nor(char *left, char *right)
 {
   int _right = binary_to_integer(right);
