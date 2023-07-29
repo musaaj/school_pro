@@ -1,0 +1,40 @@
+Hello, this is LogicOpp, a command line logic gate interpreter. It works like a programming language repl. The interface will be familiar to average engineers and scientists. 
+ 
+LogicOpp can perfom seven basic logic gate operations. The following operations are supported.
+- AND
+- NAND
+- OR
+- NOR
+- XOR
+- RIGTH SHIFT
+- LEFT SHIFT
+
+LogicOpp is being developed in ISO C11 and the code style follows *betty code style* recommendation. 
+
+Two space line indentation rules are followed and opening and closing braces sit in seperate lines. variables and internal functions are self explanatory and follows snake_case formats. 
+ 
+The following functions are implemented 
+- integer_to_binary
+- binary_to_integer
+- _and
+- _nor
+- _or
+- _nor
+- _xor
+- _rshift
+- _lshift
+- _help
+- freestrarray
+- strsplit
+ 
+Each function is in it's own file for easy maintenance and each is documented using betty doc style. 
+
+#How to compile: 
+A compliant C compiler such as GCC, Microsoft Visual C++ or Clang is required. 
+ 
+To compile with GCC for example
+```gcc *.c -o LogicOpp``` 
+
+#How to run 
+```./LogicOpp``` 
+The app has full documentations for each operation supported. To get help inside the app type ```HELP```
