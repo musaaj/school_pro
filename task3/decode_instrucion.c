@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * decode_instruction - decode 8 bit based opcode
+ * @instruction: a string of binary numbers. Must be be 8 bits long
+ */
 void decode_instruction(unsigned char instruction) {
     unsigned char opcode = instruction >> 5;
     unsigned char addressing_mode = (instruction >> 2) & 0x07;
